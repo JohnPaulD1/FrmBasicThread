@@ -9,18 +9,27 @@ namespace FrmBasicThread
 {
     internal class MyThreadClass
     {
+        
         public static void Thread1()
         {
 
-            for(int LoopCount = 0; LoopCount <= 5; LoopCount++)
-            {
+            for(int LoopCount = 0; LoopCount <= 2; LoopCount++)
+            {              
+                Thread thread = Thread.CurrentThread;              
+                Console.WriteLine("Name of Thread: " + thread.Name + " = " + LoopCount);
+                Thread.Sleep(500);
+            }            
+        }
+
+        public static void Thread2()
+        {
+
+            for (int LoopCount = 0; LoopCount < 6; LoopCount++)
+            {                
                 Thread thread = Thread.CurrentThread;
                 Console.WriteLine("Name of Thread: " + thread.Name + " = " + LoopCount);
                 Thread.Sleep(1500);
-
-
             }
-            
         }
 
     }

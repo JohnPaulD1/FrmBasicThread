@@ -1,6 +1,6 @@
 ﻿namespace FrmBasicThread
 {
-    partial class FrmBasicThread
+    partial class frmTrackThread
     {
         /// <summary>
         /// Required designer variable.
@@ -36,15 +36,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 51);
+            this.label1.Location = new System.Drawing.Point(89, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 25);
+            this.label1.Size = new System.Drawing.Size(156, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "-Before starting thread-";
+            this.label1.Text = "-Thread Starts-";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(124, 105);
@@ -52,19 +53,19 @@
             this.button1.Size = new System.Drawing.Size(87, 40);
             this.button1.TabIndex = 1;
             this.button1.Text = "Run";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FrmBasicThread
+            // frmTrackThread
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.OldLace;
+            this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(331, 157);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "FrmBasicThread";
-            this.Text = "BasicThread";
+            this.Name = "frmTrackThread";
+            this.Text = "frmTrackThread";
             this.ResumeLayout(false);
             this.PerformLayout();
 
